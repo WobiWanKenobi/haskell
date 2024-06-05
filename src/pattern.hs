@@ -24,5 +24,3 @@ main = do
     let nmb = read input :: Int
     putStrLn (lucky nmb)
     putStrLn(show(factorial nmb) ++ " is the factorial of your lucky number")
-
-

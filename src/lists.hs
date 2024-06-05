@@ -54,4 +54,3 @@ getElement :: Int -> String -> Either String String
 getElement index sentence
     | index >= 0 && index < length sentence = Right $ (sentence !! index : "") ++ " is the " ++ show (index + 1) ++ ". character in a sentence of " ++ show (length sentence) ++ " characters"
     | otherwise = Left "Index not in Range"
-

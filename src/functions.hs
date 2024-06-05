@@ -16,4 +16,3 @@ doubleSmallNumber :: (Ord a, Num a) => a -> a
 doubleSmallNumber x = if x > 100
     then x
     else x*2
-

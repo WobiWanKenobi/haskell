@@ -10,6 +10,14 @@ numbers = [1, 2, 3, 4, 5]
 doubledNumbers :: [Int]
 doubledNumbers = map (\x -> x * 2) numbers
 
-main :: IO()
-main = do
-    print doubledNumbers
+-- MORE ADVANCED:
+
+-- List of tuples representing students' scores
+studentScores =
+    [ ("Alice", [85, 90, 92])
+    , ("Bob", [75, 82, 78])
+    , ("Charlie", [91, 88, 95])
+    ]
+
+averageScores :: [(String, Double)]
+averageScores = map (\(name, scores) -> (name, sum scores / fromIntegral (length scores))) studentScores
